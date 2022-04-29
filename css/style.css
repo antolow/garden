@@ -40,7 +40,7 @@ a {
 }
 
 .section {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .title {
@@ -191,7 +191,7 @@ a {
     border: 4px solid #343D33;
     box-sizing: border-box;
     border-radius: 500px 500px 0px 0px;
-    padding: 1px;
+    padding: 5px;
 }
 
 .hero__btns {
@@ -264,12 +264,11 @@ a {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  margin-bottom: 45px;
 }
 
 .about__desc {
     width: 417px;
-    margin-left: 40px;
+    margin-left: 88px;
 }
 
 .subtitle {
@@ -299,6 +298,7 @@ a {
 .about__bottom {
     height: 409px;
     width: 100%;
+    margin-top: 45px;
 }
 
 .about__bottom-img {
@@ -334,7 +334,6 @@ margin-bottom: 52px;
 
 .news__item {
     display: flex;
-    margin-left: 50px;
     margin-bottom: 40px;
     align-items: center;
 }
@@ -343,13 +342,13 @@ margin-bottom: 52px;
 .news__item--big {
     width: 43%;
     flex-direction: column;
-
+    margin-right: 50px;
 }
 
 .news__item--big .news__img-wrap {
     width: 100%;
     height: 333px;
-    
+    flex: 1;
 }
 
 .news__img-wrap {
@@ -395,6 +394,10 @@ margin-bottom: 12px;
     color: #475F45;
 }
 
+.news__list {
+    flex: 1;
+}
+
 .news__link{
     display: flex;
      align-items: center;
@@ -421,8 +424,12 @@ margin-bottom: 12px;
 }
 
 .footer {
-  
+  color: white;
     
+}
+
+.footer .logo__title {
+    color: white;
 }
 
 .logo {
@@ -441,35 +448,43 @@ margin-bottom: 12px;
 }
 
 .footer__column {
-   
-    margin-top: 48px;  
+   padding-top: 48px;
 }
 
 .footer__logo-block {
-    color: white;
+ 
 }
 
 .footer__info {
     height: 96px;
 width: 269px;
-margin-top: 20px;
+
 
 }
 
 .footer__subtitle {
-    color: white;
     margin-bottom: 22px;
 }
 
 .footer__nav {
+ 
+}
+
+.footer .footer__nav-link {
     color: white;
 }
 
-.footer__nav-list {}
+.footer__nav-list {
+    color: white;
+}
 
 .footer__nav-item {
-    color: white;
+   margin-bottom: 15px;
 }
+
+.footer__nav-item:last-child {
+    margin-bottom: 0;
+ }
 
 .footer__nav-link {}
 
@@ -486,15 +501,19 @@ margin-top: 20px;
     
 }
 
-.social__link {}
+.social__link {
+    color: white;
+    font-size: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 
 .twitter {
     background-image: url(../img/icon/twitter.svg);
-    height: 24px;
-width: 24px;
 background-size: contain;
 background-repeat: no-repeat;
-overflow: hidden;
+background-position: center;
 }
 
 .fb {
